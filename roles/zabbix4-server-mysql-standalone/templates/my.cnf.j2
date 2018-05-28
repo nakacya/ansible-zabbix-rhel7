@@ -6,9 +6,9 @@ collation-server     = utf8_bin
 skip-character-set-client-handshake
 innodb_file_per_table
 general_log=ON
-general_log_file=/var/lib/mysql/log/query.log
+general_log_file=/var/log/mariadb/query.log
 slow_query_log=ON
-slow_query_log_file=/var/lib/mysql/log/slow_query.log
+slow_query_log_file=/var/log/mariadb/slow_query.log
 long_query_time=10
 log_queries_not_using_indexes=ON
 # Disabling symbolic-links is recommended to prevent assorted security risks

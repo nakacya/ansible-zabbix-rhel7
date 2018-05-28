@@ -25,10 +25,6 @@ ansible-playbook -u <userName> ./zabbix4-server-mysql-standalone.yml
 ansible-playbook --private-key=<pathToPrivatekey> -u <userName> ./zabbix4-server-mysql-standalone.yml
 ```
 
-mysql security setting
-```
-mysql_secure_installation
-```
 
 First time login
 ```

@@ -42,3 +42,5 @@ DBPassword: <PASSWORD>
 DBPort: 3306
 DBSocket: /var/lib/mysql/mysql.sock
 DBserver_id: 101
+DBincrement: 1
+DBoffset: 1

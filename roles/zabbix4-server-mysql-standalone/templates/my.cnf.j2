@@ -18,8 +18,8 @@ symbolic-links=0
 # customize your systemd unit file for mariadb according to the
 server-id={{ DBserver_id }}
 log-bin=/var/lib/mysql/log/bin/bin-log
-auto_increment_increment=2
-auto_increment_offset=1# instructions in http://fedoraproject.org/wiki/Systemd
+auto_increment_increment={{ DBincrement }}
+auto_increment_offset={{ DBoffset }}
 replicate-ignore-table=zabbix.history
 replicate-ignore-table=zabbix.history_uint
 replicate-ignore-table=zabbix.history_str
@@ -27,8 +27,8 @@ replicate-ignore-table=zabbix.item_discovery
 replicate-ignore-table=zabbix.sessions
 replicate-ignore-table=zabbix.trends
 replicate-ignore-table=zabbix.trends_uint
-#X#replicate-ignore-table=zabbix.media_type
-replicate-ignore-table=zabbix.auditlog,zabbix.ids
+replicate-ignore-table=zabbix.auditlog
+replicate-ignore-table=zabbix.ids
 binlog_format=row
 
 

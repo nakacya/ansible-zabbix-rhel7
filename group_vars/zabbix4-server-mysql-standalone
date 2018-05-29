@@ -31,6 +31,8 @@ max_input_time: 600
 # Database settings and ZABBIX configuration
 #  '/etc/zabbix/zabbix.conf','/etc/zabbix/web/zabbix.conf.php'
 #
+fping_location: /sbin/fping
+fping6_location: /sbin/fping6
 ListenPort: 10051
 LogFile: /var/log/zabbix/zabbix_server.log
 DBHost: localhost

@@ -17,7 +17,7 @@ symbolic-links=0
 # If you need to run mysqld under a different user or group,
 # customize your systemd unit file for mariadb according to the
 server-id={{ DBserver_id }}
-log-bin=/var/lib/mysql/log/bin/bin-log
+log-bin=/var/lib/mysql/bin-log
 auto_increment_increment={{ DBincrement }}
 auto_increment_offset={{ DBoffset }}
 replicate-ignore-table=zabbix.history
